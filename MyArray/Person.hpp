@@ -5,8 +5,6 @@
 using namespace std;
 
 class Person {
-    friend void print_Person_array(MyArray<Person>& arr);
-
    private:
     string m_name;
     int m_age;
@@ -20,6 +18,6 @@ class Person {
 };
 
 ostream& operator<<(ostream& cout, Person p) {
-    cout << "姓名:" << p.get_name() << "   年龄:" << p.get_age() ;
+    cout << "姓名:" << p.get_name() << "   年龄:" << p.get_age();
     return cout;
 }
